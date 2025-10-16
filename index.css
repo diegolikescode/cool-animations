@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import "tailwindcss";
+
+/* ------ RESET STUFF ------ */
+*, *::before, *::after { box-sizing: border-box; }
+
+* { margin: 0; }
+
+html, body, #root {
+    font-family: "Fira Code", sans-serif; /* set default font-family */
+    height: 100%; background-color: #282a36;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select { font: inherit; }
+
+table { border-collapse: collapse; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+/* ------ RESET STUFF ------ */
+
+@theme {
+    --color-bg: #282a36;
+    --color-surface: #44475a;
+    --color-fg: #f8f8f2;
+    --color-muted: #6272a4;
+    --color-accent: #8be9fd;
+    --color-success: #50fa7b;
+    --color-warning: #f1fa8c;
+    --color-danger: #ff5555;
+    --color-highlight: #ff79c6;
+    --color-secondaryAccent: #bd93f9;
+    --color-warmAccent: #ffb86c;
+}
+
+.theme-dracula {
+    --color-bg: #282a36;
+    --color-surface: #44475a;
+    --color-fg: #f8f8f2;
+    --color-muted: #6272a4;
+    --color-accent: #8be9fd;
+    --color-success: #50fa7b;
+    --color-warning: #f1fa8c;
+    --color-danger: #ff5555;
+    --color-highlight: #ff79c6;
+    --color-secondaryAccent: #bd93f9;
+    --color-warmAccent: #ffb86c;
+}
+
+.theme-penumbra {
+    --color-bg: #011627;
+    --color-surface: #1f385c;
+    --color-fg: #d6deeb;
+    --color-muted: #637777;
+    --color-accent: #7fdbca;
+    --color-success: #22da6e;
+    --color-warning: #ecc48d;
+    --color-danger: #ef5350;
+    --color-highlight: #82aaff;
+    --color-secondaryAccent: #c792ea;
+    --color-warmAccent: #f78c6c;
+}
