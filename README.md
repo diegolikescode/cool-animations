@@ -1,8 +1,6 @@
-# React + TypeScript + Vite
+# COOL ANIMATIONS
 
-## COLOR PALLET
-
-🔧 Mapping to Your UI Needs
+## 🔧 Mapping Collors
 
 |              UI Element             | Suggested Color |                Use Case / Comments                |
 |:-----------------------------------:|:---------------:|:-------------------------------------------------:|
