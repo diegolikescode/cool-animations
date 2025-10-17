@@ -1,29 +1,34 @@
+/* @import "@tailwindcss/preflight" */
+@tailwindcss/preflight
+@tailwind utilities;
+
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 @import "tailwindcss";
 
-/* ------ RESET STUFF ------ */
-*, *::before, *::after { box-sizing: border-box; }
+@layer base {
+    *, *::before, *::after { box-sizing: border-box; }
 
-* { margin: 0; }
+    /* * { margin: 0; padding: 0 } */
 
-html, body, #root {
-    font-family: "Fira Code", sans-serif; /* set default font-family */
-    height: 100%; background-color: #282a36;
+    html, body, #root {
+        font-family: "Fira Code", sans-serif; /* set default font-family */
+        height: 100%; background-color: #282a36;
+    }
+
+    img, picture, video, canvas, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    input, button, textarea, select { font: inherit; }
+
+    table { border-collapse: collapse; }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
 }
-
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
-input, button, textarea, select { font: inherit; }
-
-table { border-collapse: collapse; }
-
-@media (prefers-reduced-motion: reduce) {
-  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
-}
-/* ------ RESET STUFF ------ */
 
 @theme {
     --color-bg: #282a36;
